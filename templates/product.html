@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+</head>
+<body>
+   <table border="2"> 
+       <tr>
+           <td>productid</td>
+           <td>productname</td>
+           <td>productdesc</td>
+           <td>productprice</td>
+        <tr>
+
+    <h1>{{res}}</h1>
+    {%for i in res%}
+    <tr>
+
+    <td><h1>{{i.id}}</h1></td>
+   <td> <h1>{{i.pname}}</h1></td>
+   <td> <h1>{{i.desc}}</h1></td>
+   <td> <h1>{{i.price}}</h1></td>
+   </tr>
+    {%endfor%}
+    </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+</head>
+<body>
+   <table border="2"> 
+       <tr>
+           <td>productid</td>
+           <td>productname</td>
+           <td>productdesc</td>
+           <td>productprice</td>
+        <tr>
+    {%for i in res%}
+    <tr>
+    <td><h1>{{i.Customer_id}}</h1></td>
+    <td> <h1>{{i.name}}</h1></td>
+    <td> <h1>{{i.email}}</h1></td>
+    <td> <h1>{{i.phone}}</h1></td>
+    <td><h1>{{i.Product1_id}}</h1></td>
+    <td> <h1>{{i.pname}}</h1></td>
+    <td> <h1>{{i.desc}}</h1></td>
+    <td> <h1>{{i.price}}</h1></td>
+   </tr>
+    {%endfor%}
+    </table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+</head>
+<body>
+   <table border="2" > 
+       <tr>
+           <td><h2>transtionid</h2></td>
+           <td><h2>tdate</h2></td>
+           <td><h2>customer_id</h2></td>
+           <td><h2>product_id</h2></td>
+           <td><h2>quatity</h2></td>
+           <td><h2>price</h2></td>
+        <tr>
+    {%for i in res%}
+    <tr>
+
+    <td><h3>{{i.id}}</h3></td>
+   <td> <h3>{{i.tdate}}</h3></td>
+   <td> <h3>{{i.customer_id}}</h3></td>
+   <td> <h3>{{i.product_id}}</h3></td>
+   <td> <h3>{{i.quatity}}</h3></td>
+   <td> <h3>{{i.price}}</h3></td>
+   </tr>
+    {%endfor%}
+    </table>
+</body>
+</html>
